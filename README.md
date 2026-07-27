@@ -1,68 +1,61 @@
-# Smart AI Note & Summarizer
+# Note Summarizer
 
-A fast, modern React single-page web application designed to instantly process, summarize, and extract key takeaways from text notes and transcripts. Built with React 18, Vite, TypeScript, and Tailwind CSS.
+A lightweight React web application for summarizing meeting transcripts, articles, and long notes into concise executive summaries and key action items.
 
----
+## Features
 
-## ✨ Features
+- **Text & Transcript Summarization**: Instantly extracts main points and key takeaways from long text.
+- **Client-Side Processing**: Runs extractive NLP directly in the browser with zero server dependencies required.
+- **LLM Integration**: Option to connect Google Gemini for generative summaries if an API key is provided.
+- **Saved History**: Keeps a local record of saved summaries in your browser using `localStorage`.
+- **Responsive Interface**: Clean UI built with React, TypeScript, and Tailwind CSS.
 
-- ⚡ **Instant Client-Side Summarization**: Powered by an in-browser Extractive Natural Language Processing (NLP) engine—runs 100% on the client without requiring a server.
-- 🤖 **Optional Gemini AI Integration**: Integrates directly with Google's Gemini 3.6 Flash model (`@google/genai`) for high-fidelity generative summaries when an API key is provided.
-- 📌 **Key Takeaway Extraction**: Automatically distills lengthy text into actionable bullet points.
-- 💾 **Local Storage Persistence**: Automatically saves your note history in browser local storage.
-- 🎨 **Modern Responsive UI**: Styled with Tailwind CSS, supporting dark/light UI aesthetics with intuitive icons from `lucide-react`.
+## Tech Stack
 
----
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
 
-## 🛠️ Tech Stack
-
-- **Frontend Framework**: React 18 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **AI / NLP**: `@google/genai` (Client-side) + Browser Extractive NLP Algorithm
-- **Icons**: `lucide-react`
-
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js** (v18.0 or higher recommended)
-- **npm** or **yarn**
+- Node.js (v18 or higher)
+- npm
 
-### Installation
+### Setup
 
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/smart-ai-note-summarizer.git
-   cd smart-ai-note-summarizer
+   git clone https://github.com/your-username/note-summarizer.git
+   cd note-summarizer
    ```
 
-2. **Install dependencies**:
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-3. **Configure Environment Variables (Optional)**:
-   Create a `.env` file in the root directory or update `.env.example`:
+3. (Optional) Set up Gemini API key:
+   Create a `.env` file in the project root:
    ```env
-   VITE_GEMINI_API_KEY=your_gemini_api_key_here
+   VITE_GEMINI_API_KEY=your_api_key_here
    ```
-   *Note: If no API key is set, the app seamlessly falls back to the client-side NLP summarization engine.*
+   *If omitted, the app uses built-in client-side text processing.*
 
-4. **Start the Development Server**:
+4. Run development server:
    ```bash
    npm run dev
    ```
 
-5. **Build for Production**:
+5. Build for production:
    ```bash
    npm run build
    ```
 
----
+## License
 
-## 📄 License
+MIT
 
-This project is open source and available under the [MIT License](LICENSE).
