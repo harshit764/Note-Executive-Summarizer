@@ -1,0 +1,6 @@
+{
+  "name": "Note & Executive Summarizer",
+  "description": "A clean note and transcript summarizer that turns text notes or transcripts into structured executive summaries, key takeaways, and actionable items.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
